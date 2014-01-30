@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-Juice Blandingsberegner</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="page-header">
+    <h1>Blandingsberegner</h1>
+</div>
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="input-liquidamount" class="col-sm-2 control-label">V&aelig;skem&aelig;ngde</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" data-action="update" id="input-liquidamount" value="0">
+        </div>
+        <div class="col-sm-1">
+            <p class="form-control-static">ml</p>
+        </div>
+        <div class="col-sm-5">
+            <span class="help-block">Færdigblandet mængde E-væske</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-nicotinestrength" class="col-sm-2 control-label">Nikotinstyrke</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" data-action="update" id="input-nicotinestrength" value="0">
+        </div>
+        <div class="col-sm-1">
+            <p class="form-control-static">mg/ml</p>
+        </div>
+        <div class="col-sm-5">
+            <span class="help-block">Nikotinstyrke blalblllbla</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-nicotinestrength-pgvg" class="col-sm-2 control-label">Nikotinstyrke i PG/VG</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" data-action="update" id="input-nicotinestrength-pgvg" value="0">
+        </div>
+        <div class="col-sm-1">
+            <p class="form-control-static">mg/ml</p>
+        </div>
+        <div class="col-sm-5">
+            <span class="help-block">Nikotinstyrke blalblllbla</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-pg" class="col-sm-2 control-label">PG</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" data-action="update" id="input-pg" value="0">
+        </div>
+        <div class="col-sm-1">
+            <p class="form-control-static">%</p>
+        </div>
+        <div class="col-sm-5">
+            <span class="help-block">les PG</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-vg" class="col-sm-2 control-label">VG</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" data-action="update" id="input-vg" value="0">
+        </div>
+        <div class="col-sm-1">
+            <p class="form-control-static">%</p>
+        </div>
+        <div class="col-sm-5">
+            <span class="help-block">les VG</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-water" class="col-sm-2 control-label">Vand</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" data-action="update" id="input-water" value="0">
+        </div>
+        <div class="col-sm-1">
+            <p class="form-control-static">%</p>
+        </div>
+        <div class="col-sm-5">
+            <span class="help-block">... det vand</span>
+        </div>
+    </div>
+
+    <div class="aromas">
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-5">
+            <button class="btn btn-primary" data-action="add">Tilf&oslash;j Aroma</button>
+        </div>
+    </div>
+</form>
+
+<table id="blender-data" class="table">
+    <thead>
+        <th></th>
+        <th>Ml</th>
+        <th>Dråber</th>
+        <th>% i E-v&aelig;ske</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>VG Nikotin</th>
+            <td>0</td>
+            <td>0</td>
+            <td>35.2</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/Blender.js"></script>
+<script src="lib/main.js"></script>
+
+</body>
+</html>
