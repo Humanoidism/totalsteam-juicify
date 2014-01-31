@@ -14,9 +14,9 @@
 
 <form class="form-horizontal" role="form">
     <div class="form-group">
-        <label for="input-liquidamount" class="col-sm-2 control-label">V&aelig;skem&aelig;ngde</label>
+        <label for="input-liquidAmount" class="col-sm-2 control-label">V&aelig;skem&aelig;ngde</label>
         <div class="col-sm-1">
-            <input type="text" class="form-control" data-action="update" id="input-liquidamount" value="0">
+            <input type="text" class="form-control" data-action="update" id="input-liquidAmount" value="10">
         </div>
         <div class="col-sm-1">
             <p class="form-control-static">ml</p>
@@ -27,9 +27,9 @@
     </div>
 
     <div class="form-group">
-        <label for="input-nicotinestrength" class="col-sm-2 control-label">Nikotinstyrke</label>
+        <label for="input-nicoTarget" class="col-sm-2 control-label">Nikotinstyrke</label>
         <div class="col-sm-1">
-            <input type="text" class="form-control" data-action="update" id="input-nicotinestrength" value="0">
+            <input type="text" class="form-control" data-action="update" id="input-nicoTarget" value="10">
         </div>
         <div class="col-sm-1">
             <p class="form-control-static">mg/ml</p>
@@ -40,9 +40,9 @@
     </div>
 
     <div class="form-group">
-        <label for="input-nicotinestrength-pgvg" class="col-sm-2 control-label">Nikotinstyrke i PG/VG</label>
+        <label for="input-nicoPGVG" class="col-sm-2 control-label">Nikotinstyrke i PG/VG</label>
         <div class="col-sm-1">
-            <input type="text" class="form-control" data-action="update" id="input-nicotinestrength-pgvg" value="0">
+            <input type="text" class="form-control" data-action="update" id="input-nicoPGVG" value="20">
         </div>
         <div class="col-sm-1">
             <p class="form-control-static">mg/ml</p>
@@ -55,7 +55,7 @@
     <div class="form-group">
         <label for="input-pg" class="col-sm-2 control-label">PG</label>
         <div class="col-sm-1">
-            <input type="text" class="form-control" data-action="update" id="input-pg" value="0">
+            <input type="text" class="form-control" data-action="update" id="input-pg" value="50">
         </div>
         <div class="col-sm-1">
             <p class="form-control-static">%</p>
@@ -68,7 +68,7 @@
     <div class="form-group">
         <label for="input-vg" class="col-sm-2 control-label">VG</label>
         <div class="col-sm-1">
-            <input type="text" class="form-control" data-action="update" id="input-vg" value="0">
+            <input type="text" class="form-control" data-action="update" id="input-vg" value="50">
         </div>
         <div class="col-sm-1">
             <p class="form-control-static">%</p>
@@ -81,7 +81,7 @@
     <div class="form-group">
         <label for="input-water" class="col-sm-2 control-label">Vand</label>
         <div class="col-sm-1">
-            <input type="text" class="form-control" data-action="update" id="input-water" value="0">
+            <input type="text" class="form-control" data-action="update" id="input-water" value="15">
         </div>
         <div class="col-sm-1">
             <p class="form-control-static">%</p>
@@ -104,8 +104,8 @@
 <table id="blender-data" class="table">
     <thead>
         <th></th>
-        <th>Ml</th>
         <th>Dråber</th>
+        <th>Ml</th>
         <th>% i E-v&aelig;ske</th>
     </thead>
     <tbody>
